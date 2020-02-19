@@ -1,0 +1,23 @@
+<h1>食材一覧</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>名前</th>
+      <th>値段</th>
+      <th>在庫</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @foodstuffs.each do |foodstuff| %>
+      <tr>
+        <td><%= foodstuff.id %></td>
+        <td><%= foodstuff.name %></td>
+        <td><%= foodstuff.price %></td>
+        <td><%= foodstuff.quantity %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
